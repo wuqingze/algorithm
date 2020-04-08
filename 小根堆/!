@@ -1,0 +1,25 @@
+class Main:
+    def __init__(self):
+        pass
+
+    def __init__(self, arr, index):
+        self.heap = [i for i in range(len(arr)]
+
+    def insert(self,n):
+        pass
+
+    def remove(self,n):
+        pass
+    def top(self):
+        return self.heap
+
+def topn(arr,n):
+    if None == arr or [] == arr or n<0 or n>len(arr):
+        return None
+
+    o = Main(arr,n)
+    return o.top()
+
+if __name__ == '__main__':
+    print('hello world')
+    print(topn([1,2,2],2))

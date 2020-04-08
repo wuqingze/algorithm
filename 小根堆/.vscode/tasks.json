@@ -1,0 +1,1 @@
+{    "version": "2.0.0",    "tasks": [      {        "label": "build cpp",        "type": "shell",        "command": "gcc",        "args": ["-g", "-o", "temp.exe", "MinHeap.cpp"],        "group": {          "kind": "build",          "isDefault": true        }      }    ]}
