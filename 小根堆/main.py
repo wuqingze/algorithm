@@ -67,3 +67,8 @@ if __name__ == '__main__':
     print('hello world')
     print(topn([1,2,2],2))
     print(topn([4,3,2,1],2))
+    print(topn([3,2,1],1))
+    print(topn([1],1))
+    print(topn([],1))
+    print(topn([1,2,3,4],1))
+    print(topn([9,8,7,6,5,4,3,2,1],1))
