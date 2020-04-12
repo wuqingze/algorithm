@@ -21,7 +21,14 @@ class Main:
         self.size -= 1
         
     def top(self):
-        return self.heap
+        if self.size<=0:
+            return None
+        r = self.heap[0]
+        self.heap[0] = self.heap[self.size-1]
+        self.heap[self.size-1] = 0x7fffffff
+        self.size -= 1
+        self.shiftDown(0)
+        return r
 
     def shiftUp(self, leaf):
         cur = leaf
@@ -29,7 +36,9 @@ class Main:
         while cur > 0:
             p = (cur -1)//2
             if self.heap[p] > self.heap[cur]:
+                t = self.heap[cur]
                 self.heap[cur] = self.heap[p]
+                self.heap[p] = t
                 cur = p
             else:
                 break
@@ -49,7 +58,9 @@ class Main:
             if self.heap[cur] < self.heap[child]:
                 break
             else:
+                t = self.heap[cur] 
                 self.heap[cur] = self.heap[child]
+                self.heap[child] = t
                 cur = child
         self.heap[cur] = temp
 
@@ -57,6 +68,7 @@ class Main:
 def topn(arr,n):
     if None == arr or [] == arr or n<0 or n>len(arr):
         return None
+<<<<<<< HEAD
 
     o = Main(arr)
     return o.top()
@@ -65,3 +77,31 @@ if __name__ == '__main__':
     print('hello world')
     #print(topn([9,8,7,6,5,4,3,2,1],1))
     print(topn([3,2,1],1))
+=======
+    o = Main(arr)
+    t = None
+    print(o.heap)
+    for i in range(n):
+        t = o.top()
+        print("top===", o.heap)
+    return t 
+
+if __name__ == '__main__':
+#    print('hello world')
+#    print(topn([1,2,2],2))
+#    print(topn([4,3,2,1],2))
+#    print(topn([3,2,1],1))
+#    print(topn([1],1))
+#    print(topn([],1))
+#    print(topn([1,2,3,4],1))
+#n    print(topn([9,8,7,6,5,4,3,2,1],1))
+    print(topn([9,8,7,6,5,4,3,2,1],1))
+    print(topn([9,8,7,6,5,4,3,2,1],2))
+    print(topn([9,8,7,6,5,4,3,2,1],3))
+    print(topn([9,8,7,6,5,4,3,2,1],4))
+    print(topn([9,8,7,6,5,4,3,2,1],5))
+    print(topn([9,8,7,6,5,4,3,2,1],6))
+    print(topn([9,8,7,6,5,4,3,2,1],7))
+    print(topn([9,8,7,6,5,4,3,2,1],8))
+    print(topn([9,8,7,6,5,4,3,2,1],9))
+>>>>>>> 0c49e6988f5bde814bd1f78dbc11161f8819b2b2
