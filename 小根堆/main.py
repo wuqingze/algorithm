@@ -2,18 +2,16 @@ class Main:
     def __init__(self):
         pass
 
-    def __init__(self, arr, n):
+    def __init__(self, arr):
+        n = len(arr)
         self.heap = [0x7fffffff]*n
         self.size = 0
         for i in range(n):
             self.insert(arr[i])
-        for i in range(n,len(arr)):
-            self.remove()
-            self.insert(arr[i])
 
     def insert(self,num):
         self.heap[self.size] = num
-        self.sihftUp(self.size)
+        self.shiftUp(self.size)
         self.size += 1
 
     def remove(self):
@@ -27,7 +25,7 @@ class Main:
 
     def shiftUp(self, leaf):
         cur = leaf
-        temp = heap[leaf]
+        temp = self.heap[leaf]
         while cur > 0:
             p = (cur -1)//2
             if self.heap[p] > self.heap[cur]:
@@ -35,9 +33,9 @@ class Main:
                 cur = p
             else:
                 break
-        heap[cur] = temp
+        self.heap[cur] = temp
 
-    def sihftDown(self, root):
+    def shiftDown(self, root):
         cur = root
         n = len(self.heap)
         temp = self.heap[cur]
@@ -45,7 +43,7 @@ class Main:
             child = cur * 2 + 1
             if child > n -1:
                 break
-            if child + 1 < n && self.heap[child] > self.heap[child+1]:
+            if child + 1 < n and self.heap[child] > self.heap[child+1]:
                 child = child + 1
             
             if self.heap[cur] < self.heap[child]:
@@ -60,9 +58,10 @@ def topn(arr,n):
     if None == arr or [] == arr or n<0 or n>len(arr):
         return None
 
-    o = Main(arr,n)
+    o = Main(arr)
     return o.top()
 
 if __name__ == '__main__':
     print('hello world')
-    print(topn([1,2,2],2))
+    #print(topn([9,8,7,6,5,4,3,2,1],1))
+    print(topn([3,2,1],1))
