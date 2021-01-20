@@ -43,19 +43,3 @@ void HeapSort(vector<T> &arr){
         MaxHeap(arr, 0, i);
     }
 }
-
-int main(){
-    string line;
-    while(getline(cin, line)){
-        istringstream is(line);
-        int n;
-        vector<int> arr;
-        while(is>>n) arr.push_back(n);
-        for(auto i: arr) cout<<i<<" ";
-        cout<<endl;
-        HeapSort(arr);
-        for(auto i: arr) cout<<i<<" ";
-        cout<<endl<<"------"<<endl;
-    }
-    return 0;
-}
