@@ -84,3 +84,82 @@ maxHeap(arr, i)
 
 - **[CPP代码实现](./code/Solution.cc)**
 
+### 优先队列
+
+虽然堆排序算法是一个很漂亮的算法，但是在实际中，快速排序一个好的实现往往好于
+堆排序。尽管如此，堆数据结构还是有着很大的用处，一个很常见的应用是优先队列(priority queue).
+
+优先队列的一个应用是在一台分时计算机上进行作业调度。如果一个作业做完或者被中断，
+用top()操作从所有等待的作业中，选择出具有最高优先级的作业。任何时候，一个新的作业
+或者中断的作业都可以通过insert操作加入到队列中。比如，一个被中断的作业，操作系统可以
+先通过insert操作插入队列中，然后用top操作取出最大优先级的作业继续执行。
+
+- **定义堆结构**
+```
+template<typename T>
+struct PriorityQueue{
+    int len = 0;            //节点数
+    int capability = 1024;  //树的空间大小，默认是1024，可以按照2倍的速率增长
+    T* arr;                 //存储节点的空间
+}
+```
+- **insert方法**
+    - 如果空间不够，需要扩展空间 
+        ```
+            if(len == capability){
+                capability = capability * 2;
+                T *t = (T*) malloc(sizeof(T) * capability);
+                memcpy(t, arr, capability/2);
+                delete arr;
+                arr = t;
+            }
+        ```
+
+     - 将节点添加到数组尾部后，并自底向上调整堆的结构
+        ```
+        void maintainHeap(){
+            int index = len-1;
+            while(index>0){
+                int parent = (index -1)/2;
+                if(arr[parent] < arr[index]){
+                    exchagne(index, parent);
+                    index = parent;
+                }else break;
+            }
+        }
+        ```
+
+- **top方法**
+
+    top方法将堆中的根节点弹出并返回。如果堆中没有节点，抛出异常，取到根节点，然后将
+    根节点换成最后一位元素。然后通过maxHeap操作自顶向下维持堆的结构。
+
+    ```
+    T top(){
+        if(len == 0) throw "priority queue is empty!";
+        auto result = arr[0];
+        arr[0] = arr[--len];
+        maxHeap();
+        return result;
+    }
+    ```
+
+- **动态扩张和内存拷贝**
+    - 按原来堆空间的2倍大小申请新空间
+    - 通过`memcpy(void *dest, void *src, int offset)`方法拷贝原堆的内存到目标堆，`memcpy`方法
+    在头文件`string.h`中
+    - 通过`delete src`释放原堆空间
+    - 将堆指针指向新分配的内存空间
+
+    ***示例***
+    ```
+    if(len == capability){
+        capability = capability * 2;
+        T *t = (T*) malloc(sizeof(T) * capability);
+        memcpy(t, arr, capability/2);
+        delete arr;
+        arr = t;
+    }
+    ``` 
+
+- **[CPP代码实现](./code/PriorityQueue.cc)**
