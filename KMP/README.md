@@ -1,0 +1,3 @@
+kmp算法理解的关键是理解影子状态，所谓的影子状态是在pattern字符串中
+匹配当前后缀存在的最长前缀，无论是算法4中的实现还是Introduction to Algorithm
+中的实现。
