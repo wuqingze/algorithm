@@ -43,5 +43,6 @@ void sort(RandomIt first, RandomIt end, Compare less =
 }
 
 int main(){
+    sort(nums, nums+3);
     return 0;
 }
