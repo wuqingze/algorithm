@@ -8,7 +8,7 @@
 - [链式存储结构之双向链表与跳表](./Double-Linked-List/README.md#双向链表)
 
 ### 栈 （Queue)
-- 队列
+- [队列](./Stack(Queue)/README.md)
 
 ### 二叉树 （Binary Tree)
 - Tree
