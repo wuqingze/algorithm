@@ -11,8 +11,8 @@
 - [队列](./Stack(Queue)/README.md)
 
 ### 二叉树 （Binary Tree)
-- Tree
-- 二叉树的所有遍历方法
+- [Tree](./Tree/README.md)
+- [二叉树的所有遍历方法](./Tree/README.md)
 - 线索二叉树
 
 ### 二叉搜索树 （Binary Search Tree)
