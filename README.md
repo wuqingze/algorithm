@@ -13,7 +13,7 @@
 ### 二叉树 （Binary Tree)
 - [Tree](./Tree/README.md)
 - [二叉树的所有遍历方法](./Tree/README.md)
-- 线索二叉树
+- [线索二叉树](./Tree/README.md#线索二叉树)
 
 ### 二叉搜索树 （Binary Search Tree)
 - 树、二叉树与森林之间的相互转换
