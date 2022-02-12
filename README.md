@@ -17,7 +17,7 @@
 
 ### 二叉搜索树 （Binary Search Tree)
 - 树、二叉树与森林之间的相互转换
-- 赫夫曼编码
+- [赫夫曼编码](./Huffman-Coding/README.md)
 - 二叉排序树
 
 ### 堆 （Heap）
