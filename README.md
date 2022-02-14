@@ -32,9 +32,9 @@
 - [最小生成树](./Graphic/Minimum-Spanning-Tree/README.md)
 - [最短路径之Dijkstra算法](./Graphic/Dijkstra/README.md)
 - 最短路径之弗洛伊德算法
+- [拓扑排序](./Graphic/Topological-Order/README.md)
 - 关键路径
 
-~                                                                                                               
 ### 查找算法 （Searching Algorithm）
 - 二分查找
 - 三个查找算法
