@@ -57,7 +57,7 @@
 * 如果边的权重存在负值，那么存在负值圈(negative-cost cycle)问题，这回造成目前
 所有的算法失效，因此不讨论存在边权重为负值的情况
 * 按照**递增**的顺序找到各个顶点的最短路
-* **dijkstra算法**
+* [dijkstra算法](./Dijkstra/README.md)
     - 
     ![./imgs/11.jpg](./imgs/11.jpg)
 * 如果边的权重存在负值，那么存在负值圈(negative-cost cycle)问题，这回造成目前

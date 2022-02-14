@@ -30,7 +30,7 @@
 - [图](./Graphic/README.md)
 - 图的遍历方式
 - [最小生成树](./Graphic/Minimum-Spanning-Tree/README.md)
-- 最短路径之Dijkstra算法
+- [最短路径之Dijkstra算法](./Graphic/Dijkstra/README.md)
 - 最短路径之弗洛伊德算法
 - 关键路径
 
