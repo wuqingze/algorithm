@@ -24,13 +24,17 @@
 - [二叉堆](./Heap/README.md)
 
 ### 哈希 （Hashing）
-- 图
+- 什么是哈希
+
+### 图（Graph)
+- [图](./Graphic/README.md)
 - 图的遍历方式
 - 最小生成树
 - 最短路径之Dijkstra算法
 - 最短路径之弗洛伊德算法
 - 关键路径
 
+~                                                                                                               
 ### 查找算法 （Searching Algorithm）
 - 二分查找
 - 三个查找算法
