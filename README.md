@@ -55,7 +55,7 @@
 
 ### 高级数据结构 （Advanced Data Structure）
 - AVL树
-- 红黑树
+- [红黑树](./Red-Black-Trees/README.md)
 - B树
 - B+树
 - 线段树
