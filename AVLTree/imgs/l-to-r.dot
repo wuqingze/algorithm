@@ -16,7 +16,7 @@ digraph G {
     }
 
     subgraph cluster_1 {
-        a2[label="A height:h+1"]
+        a2[label="A height:{h+1,h+2}"]
         b2[label="B"]
         x2[label="x" style=filled]
         c2[label="C height:h"]
