@@ -1,0 +1,56 @@
+digraph G {
+
+    graph [fontsize=10 fontname="Verdana" compound=true];
+
+    subgraph cluster_0 {
+        a1[label="A"]
+        b1[label="B height:h+2"]
+        c1[label="C height:h"]
+        d1[label="D height:h"]
+        e1[label="E height:h+1" style=filled]
+        e1_l[label="E_l"];
+        e1_r[label="E_r"];
+        a1->b1;
+        a1->c1;
+        b1->d1;
+        b1->e1;
+        e1->e1_l;
+        e1->e1_r;
+    }
+
+    subgraph cluster_1 {
+        a2[label="A"]
+        b2[label="B height:h+1"]
+        d2[label="D height:h"]
+        e2[label="E height:h+2"]
+        c2[label="C height:h" style=filled]
+        e2_l[label="E_l"];
+        e2_r[label="E_r"];
+        b2->d2;
+        a2->e2;
+        a2->c2;
+        e2->b2;
+        e2->e2_r;
+        b2->e2_l;
+    }
+
+    subgraph cluster_2 {
+        e3[label="E" style=filled]
+        b3[label="B height:h+1"]
+        d3[label="D height:h"]
+        e3_l[label="E_l"];
+        e3_r[label="E_r"];
+        a3[label="A height:h+1"]
+        c3[label="C height:h"]
+        e3->b3;
+        e3->a3;
+        b3->d3;
+        b3->e3_l;
+        a3->e3_r;
+        a3->c3;
+    }
+
+    // Edges that directly connect one cluster to another
+    c1 -> b2 [ltail=cluster_0 lhead=cluster_1];
+    a2 -> b3 [ltail=cluster_1 lhead=cluster_2];
+}
