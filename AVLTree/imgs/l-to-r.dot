@@ -1,0 +1,35 @@
+digraph G {
+
+    graph [fontsize=10 fontname="Verdana" compound=true];
+
+    subgraph cluster_0 {
+        a1[label="A"]
+        b1[label="B height:h+2"]
+        c1[label="C height:h"]
+        d1[label="D height:h+1"]
+        x1[label="x" style=filled]
+        a1->b1;
+        a1->c1;
+        b1->d1;
+        b1->x1;
+
+    }
+
+    subgraph cluster_1 {
+        a2[label="A height:h+1"]
+        b2[label="B"]
+        x2[label="x" style=filled]
+        c2[label="C height:h"]
+        d2[label="D height:h+1"]
+        a2->x2;
+        a2->c2;
+        b2->d2;
+        b2->a2;
+    }
+
+    // Edges between nodes render fine
+    //"Item 1" -> "Item 2";
+
+    // Edges that directly connect one cluster to another
+    a1 -> d2 [ltail=cluster_0 lhead=cluster_1];
+}
