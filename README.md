@@ -54,7 +54,7 @@
 - 快速排序
 
 ### 高级数据结构 （Advanced Data Structure）
-- AVL树
+- [AVL树](./AVLTree/README.md)
 - [红黑树](./Red-Black-Trees/README.md)
 - B树
 - B+树
