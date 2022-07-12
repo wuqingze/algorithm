@@ -1,0 +1,41 @@
+digraph{
+    node [shape=plaintext]
+    rankdir=LR;
+
+    node[group=main];
+    a[label="History"];
+    b[label="Genetic\nAncestry"];
+    c[label="Self or Other Identified Race"];
+    d[label="Social Factors"];
+    e[label="Behaviors"];
+    f[label="Bilogical factors"];
+    g[label="Cognitive Decline Alzheimer's Disease"];
+    node[group=""];
+    h[label="Birth Region"];
+
+    a->b;
+    b->c;
+    c->d;
+    d->e;
+    e->f;
+    f->g;
+
+    a->d;
+    a->e;
+    
+    b->f;
+    b->g;
+
+    c->e;
+
+    d->g;
+    
+    e->g;
+
+
+    h->c;
+    h->d;
+    h->e;
+    h->f;
+    h->g;
+}
