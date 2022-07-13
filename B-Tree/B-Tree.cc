@@ -367,11 +367,11 @@ int main(int argc, char* argv[]){
     for(int i=0;i<n;i++) tree.insert(args[i]);
 //    cout<<"digraph {"<<endl;
 //    tree.traverse(100);
-    //for(int i=0;i<n/2;i++) {
-    for(int i=0;i<n;i++) {
-        tree.remove(args[i]);
+//    for(int i=0;i<n/2;i++) {
+//    for(int i=0;i<n;i++) {
+//        tree.remove(args[i]);
 //        tree.traverse(i);
-    }
+//    }
     for(int i=0;i<n;i++) swap(args[i], args[rand()%n]);
     tree.traverse();
 //    cout<<"}"<<endl;

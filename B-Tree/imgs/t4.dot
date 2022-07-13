@@ -1,0 +1,25 @@
+// 16,5,20,19,10,11,4,13,17,7,8,12,1,15,2,9,6,21,3,18,14,
+digraph g {
+node [shape = record,height=.1];
+node0[label = "<f0>|11|<f1>|16|<f2>||<f3>"];
+node1[label = "<f0>|4|<f1>|7|<f2>||<f3>"];
+node0:f0 -> node1;
+node2[label = "<f0>|1|<f1>|2|<f2>|3|<f3>"];
+node1:f0 -> node2;
+node3[label = "<f0>|5|<f1>|6|<f2>||<f3>"];
+node1:f1 -> node3;
+node4[label = "<f0>|8|<f1>|9|<f2>|10|<f3>"];
+node1:f2 -> node4;
+node5[label = "<f0>|14|<f1>||<f2>||<f3>"];
+node0:f1 -> node5;
+node6[label = "<f0>|12|<f1>|13|<f2>||<f3>"];
+node5:f0 -> node6;
+node7[label = "<f0>|15|<f1>||<f2>||<f3>"];
+node5:f1 -> node7;
+node8[label = "<f0>|19|<f1>||<f2>||<f3>"];
+node0:f2 -> node8;
+node9[label = "<f0>|17|<f1>|18|<f2>||<f3>"];
+node8:f0 -> node9;
+node10[label = "<f0>|20|<f1>|21|<f2>||<f3>"];
+node8:f1 -> node10;
+}
