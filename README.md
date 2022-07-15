@@ -1,4 +1,3 @@
-![](./tiktok.gif)
 ### 数组（Array)
 - 线性表
 
@@ -58,7 +57,7 @@
 - [红黑树](./Red-Black-Trees/README.md)
 - [B树](./B-Tree/README.md)
 - B+树
-- 线段树
+- [线段树](./Segment-Tree/README.md)
 - 树状数组
 
 ### 动态规划
@@ -70,6 +69,6 @@
 ### 其它
 - 数组中的逆序对
 - 递归+分治
-- 字符串查找之KMP算法
+- [字符串查找之KMP算法](./KMP/README.md)
 - [LRU算法和LRU缓存机制背后的数据结构](./LRU/README.md)
 - [双指针](./Double-Pointer/README.md)
