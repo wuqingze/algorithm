@@ -1,0 +1,26 @@
+digraph{
+    node [shape=plaintext]
+    edge [style=dashed]
+    a [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+                           <TR><TD PORT="1" BGCOLOR="gray">1</TD></TR>
+                           <TR><TD PORT="2" >2</TD></TR>
+                           <TR><TD PORT="3" >3</TD></TR>
+                           <TR><TD PORT="4" >4</TD></TR>
+                           <TR><TD PORT="5" >5</TD></TR>
+                           <TR><TD PORT="6">6</TD></TR>
+                           <TR><TD PORT="7">7</TD></TR>
+              </TABLE>>];
+
+    a:1 -> a:6 [dir=both];
+    b [label=<<TABLE BORDER="0" CELLBORDER="1" CELLSPACING="0">
+                            <TR><TD PORT="1" BGCOLOR="#ffff99">1</TD></TR>
+                            <TR><TD PORT="2" >2</TD></TR>
+                            <TR><TD PORT="3" >3</TD></TR>
+                            <TR><TD PORT="4" >4</TD></TR>
+                            <TR><TD PORT="5" >5</TD></TR>
+                            <TR><TD PORT="6">6</TD></TR>
+                            <TR><TD PORT="7">7</TD></TR>
+               </TABLE>>];
+
+    b:1 -> b:6 [dir=both];
+}

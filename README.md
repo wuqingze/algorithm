@@ -40,17 +40,16 @@
 - 三个查找算法
 
 ### 排序算法 （Sorting Algorithm）
-- 几种最基础的排序算法
-- 选择排序
--  冒泡排序
-- 插入排序
-- 归并排序
-- 如何实现空间复杂度为O(1)的归并排序
-- 归并排序关键点
-- 堆排序
-- 基数排序
-- 计数排序
-- 快速排序
+- [几种最基础的排序算法](./Sort/README.md)
+- [选择排序](./Sort/README.md/#选择排序)
+- [冒泡排序](./Sort/README.md/#冒泡排序)
+- [插入排序](./Sort/README.md/#插入排序)
+- [归并排序](./Sort/README.md/#归并排序)
+- [如何实现空间复杂度为O(1)的归并排序](./Sort/README.md/#如何实现空间复杂度为O(1)的归并排序)
+- [堆排序](./Sort/README.md/#堆排序)
+- [基数排序](./Sort/README.md/#基数排序)
+- [计数排序](./Sort/README.md/#计数排序)
+- [快速排序](./Sort/README.md/#快速排序)
 
 ### 高级数据结构 （Advanced Data Structure）
 - [AVL树](./AVLTree/README.md)
