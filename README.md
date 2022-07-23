@@ -35,10 +35,6 @@
 - [拓扑排序](./Graphic/Topological-Order/README.md)
 - 关键路径
 
-### 查找算法 （Searching Algorithm）
-- 二分查找
-- 三个查找算法
-
 ### 排序算法 （Sorting Algorithm）
 - [几种最基础的排序算法](./Sort/README.md)
 - [选择排序](./Sort/README.md/#选择排序)
@@ -63,10 +59,12 @@
 - 普通DP方法
 - 基于状态压缩的动态规划
 - 01背包问题及其运用
-- 最长递增子序列
+- [最长递增子序列](./Longest-Sub-Questions/README.md)
 
 ### 其它
 - 数组中的逆序对
+    - 使用归并排序的思想进行计算
+    - [计算数组中特定规则的逆序对](https://github.com/wuqingze/leetcode/tree/master/0493-Reverse-Pairs/)
 - 递归+分治
 - [字符串查找之KMP算法](./KMP/README.md)
 - [LRU算法和LRU缓存机制背后的数据结构](./LRU/README.md)

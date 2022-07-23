@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>PayloadContent</key>
+		<array>
+			<dict>
+				<key>DNSSettings</key>
+				<dict>
+					<key>DNSProtocol</key>
+					<string>HTTPS</string>
+					<key>ServerURL</key>
+					<string>https://dns.hee.ink/dns-query</string>
+				</dict>
+				<key>PayloadDescription</key>
+				<string>Konnyaku's DoH</string>
+				<key>PayloadDisplayName</key>
+				<string>Konnyaku's DoH</string>
+				<key>PayloadIdentifier</key>
+				<string>com.apple.dnsSettings.managed.f900f1bd-b266-4ad5-8900-fc2bfd001d43</string>
+				<key>PayloadType</key>
+				<string>com.apple.dnsSettings.managed</string>
+				<key>PayloadUUID</key>
+				<string>7689ab71-6056-4a8f-9c70-07fd5f22b46e</string>
+				<key>PayloadVersion</key>
+				<integer>1</integer>
+			</dict>
+		</array>
+		<key>PayloadDescription</key>
+		<string>由@Konnyaku 提供的无污染加密 DNS 服务，可在 iOS 14 或 macOS Big Sur 及以上版本设备上使用。</string>
+		<key>PayloadDisplayName</key>
+		<string>Konnyaku's DoH</string>
+		<key>PayloadIdentifier</key>
+		<string>7fe35b64-5e8a-4574-b288-8d98c7dcaa23</string>
+		<key>PayloadRemovalDisallowed</key>
+		<false/>
+		<key>PayloadType</key>
+		<string>Configuration</string>
+		<key>PayloadUUID</key>
+		<string>0dfa1db4-7923-4e8f-ac53-51cf5c0e42ae</string>
+		<key>PayloadVersion</key>
+		<integer>1</integer>
+	</dict>
+</plist>
